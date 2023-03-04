@@ -1,14 +1,40 @@
-.top{
+body{
+    background: rgb(250, 236, 242);
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-width:400;
+}
+body, input, button {
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #202124;
+}
+div{
+    display: block;
+}
+.start{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    height: 100;
+}
+.alldivs{
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
     align-items: center;
-    margin-top: 10px;
-    margin-right: 10px;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: 60px;
+    justify-content: flex-end;
 }
-.top a:first-child {
-    margin-right: 10px;
-}
-.centered {
+.centered{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +42,17 @@
     height: 80vh;
 }
 input[type="text"] {
-    background-color: #fff;
+    display: flex;
+    height: 44px;
+    background: #fff;
     border: 1px solid #dfe1e5;
+    box-shadow: none;
     border-radius: 24px;
-    margin: 10px;
+    width: 638px;
+    max-width: 584px;
+    margin: 20px;
 }
-input[type="submit"] {
+input[type="submit"]:not(#adbutt) {
     display: block;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -37,3 +68,39 @@ input[type="submit"] {
     text-align: center;
     cursor: pointer;
 }
+.caja {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+#adtitle{
+    color: rgb(201, 65, 65);
+    padding: 20px;
+    margin: 30px;
+}
+input[type="button"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: auto;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 130px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    }
+    .btn-container {
+        display: flex;
+        margin-top: 10px;
+      }
+      
+      .btn-container button {
+        flex: 1;
+        margin-right: 10px;
+      }
