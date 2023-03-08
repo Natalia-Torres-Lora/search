@@ -68,6 +68,9 @@ input[type="submit"]:not(#adbutt) {
     text-align: center;
     cursor: pointer;
 }
+input[type="submit"]:not(#adbutt):hover, input[type="button"]:hover {
+    border-color: lightgrey;
+  }
 .caja {
     max-width: 1140px;
     min-width: 200px;
@@ -101,5 +104,5 @@ input[type="button"] {
 }
 .btn-container button {
         flex: 1;
-        margin-right: 10px;
+        margin-left: 10px;
 }
