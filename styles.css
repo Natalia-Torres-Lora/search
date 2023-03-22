@@ -69,13 +69,13 @@ input[type="submit"]:not(#adbutt) {
 input[type="submit"]:not(#adbutt):hover, input[type="button"]:hover {
     border-color: lightgrey;
 }
-.caja {
+.form_container {
     max-width: 1140px;
     min-width: 200px;
     width: 96%;
     margin: 40px 2% 0 45px;
 }
-#adtitle{
+#form_title{
     color: rgb(201, 65, 65);
     padding: 20px;
     margin: 30px;
@@ -108,7 +108,7 @@ footer{
     position: fixed;
     bottom: 0;
     display: flex;
-    background-color: #f2f2f2;
+    background-color: #8c6d6da1;
     width: 100%;
 }
 footer div{
