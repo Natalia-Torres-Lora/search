@@ -3,57 +3,67 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Advanced Search</title>
+        <title>Google Images</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class = "start">
-            <div class = "alldivs header">
+      <header>
+        <div class = "header">
                 <nav>
                     <a class="btn btn-light btn-sm" href="index.html" role="button">Home Page</a>                     
                 </nav>
             </div>
+        </header>
+        <main>
+          <div>
+            <h4 id="adtitle">Advanced Search</h4>
+          </div>
+          <div class = "caja">
             <div>
-                <h4 id="adtitle">Advanced Search</h4>
+              <h5>Find pages with...</h5>
             </div>
-            <div class = "caja">
-                <div>
-                    <h5>Find pages with...</h5>
+            <form action="https://www.google.com/search">
+              <div class="form-group row">
+                <label for="all_these" class="col-sm-2 col-form-label">all these words:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id ="all_these" name="as_q">
                 </div>
-                <form action="https://www.google.com/search">
-                    <div class="form-group row">
-                      <label for="input1 class" class="col-sm-2 col-form-label">all these words:</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id ="adfo" name="as_q">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="input1 class" class="col-sm-2 col-form-label">this exact word or phrase:</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id ="adfo" name="as_epq">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="input1 class" class="col-sm-2 col-form-label">any of these words:</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id ="adfo" name="as_oq">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="input1 class" class="col-sm-2 col-form-label">none of these words:</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id ="adfo" name="as_eq">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-10">
-                        <input class="btn btn-primary" id="adbutt" type="submit" value="Search">
-                      </div>
-                    </div>
-                  </form> 
-                </div>                  
+              </div>
+              <div class="form-group row">
+                <label for="this exact" class="col-sm-2 col-form-label">this exact word or phrase:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id ="this exact" name="as_epq">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="any_of" class="col-sm-2 col-form-label">any of these words:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id ="any_of" name="as_oq">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="none_of" class="col-sm-2 col-form-label">none of these words:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id ="none_of" name="as_eq">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <input class="btn btn-primary" id="adbutt" type="submit" value="Advanced Search">
+                </div>
+              </div>
+            </form> 
+          </div>
+        </main>
+        <footer>
+          <div>
+              <img src="images/Harvard.svg.png" width="50" height="45">
             </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+          <div>
+              <h6>This is CS50 Web Programming Proyect I</h6>
+          </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>

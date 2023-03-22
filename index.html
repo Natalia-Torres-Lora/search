@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="start">
-            <div class = "alldivs header">
+        <header>
+            <div class="header">
                 <nav>
                     <ul>
                         <a class="btn btn-light btn-sm" href="simage.html" role="button">Image Search</a>
@@ -17,17 +17,30 @@
                     </ul>
                 </nav>
             </div>
-            <div class = "alldivs centered">
-                <h1>Google</h1>
+        </header>
+        <main id="main">
+            <div class="logo">
+                <img src="images/google_logo.png" width="300" height="100">
+            </div>
+            <div class="form">
                 <form action="https://www.google.com/search">
                     <input type="text" name="q">
                     <div class="btn-container">
-                    <input type="submit" value="Google Search">
+                    <input type="submit" value="Google Search" style= "margin-right: 10px;">
                     <input type="button" value="I'm Feeling Lucky" onclick="window.location.href='https://www.google.com/search?q=' + encodeURIComponent(document.getElementsByName('q')[0].value) + '&btnI';">
                     </div>
-                </form>
+                </form> 
+            </div>              
+        </main>
+        <footer>
+            <div>
+                <img src="images/Harvard.svg.png" width="50" height="45">
+
             </div>
-        </div>
-        s<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            <div>
+                <h6>This is CS50 Web Programming Proyect I</h6>
+            </div>
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
