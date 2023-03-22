@@ -1,13 +1,16 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: rgb(250, 236, 242);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 body, html{
     height: 100%;
     margin: 0;
     padding: 0;
-}
-html, body{
-    min-width:400;
 }
 body, input, button {
     font-size: 14px;
@@ -17,15 +20,6 @@ body, input, button {
 div{
     display: block;
 }
-.start{
-    display: flex;
-    flex-direction: column;
-    height: 100;
-}
-.alldivs{
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
 .header{
     display: flex;
     align-items: center;
@@ -34,12 +28,16 @@ div{
     height: 60px;
     justify-content: flex-end;
 }
-.centered{
+#main{
+    flex-grow: 1;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+}
+.logo {
+    margin-bottom: 20px;
 }
 input[type="text"] {
     display: flex;
@@ -70,7 +68,7 @@ input[type="submit"]:not(#adbutt) {
 }
 input[type="submit"]:not(#adbutt):hover, input[type="button"]:hover {
     border-color: lightgrey;
-  }
+}
 .caja {
     max-width: 1140px;
     min-width: 200px;
@@ -99,10 +97,23 @@ input[type="button"] {
     margin-left: 10px;
 }
 .btn-container {
-        display: flex;
-        margin-top: 10px;
+    display: flex;
+    margin-top: 10px;
 }
 .btn-container button {
-        flex: 1;
-        margin-left: 10px;
+    flex: 1;
+    margin-left: 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+footer div{
+    flex: 1;
+    padding: 5px;
+    margin-top: 4px;
+    color: #727479;
 }
