@@ -1,6 +1,7 @@
 
 # CS50's Web Programming with Python and JavaScript - Project 0
 # Search
+- This is my completed project from the Harvard edEx online course.
 
 ## Requirements
 
@@ -31,9 +32,4 @@
 
 6. Click the "I'm Feeling Lucky" button on the main Google Search page to bypass the normal results page and go directly to the first search result.
 
-7. Enjoy the Google-like aesthetics of the website.
-
-## Note
-
-You may encounter a redirect notice when using the "I'm Feeling Lucky" button. This is an expected consequence of a security feature implemented by Google.
-
+7. css should resemble the Google-like aesthetics of the website.
