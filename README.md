@@ -1,7 +1,7 @@
 
 # CS50's Web Programming with Python and JavaScript - Project 0
 # Search
-- This is my completed project from the Harvard edEx online course.
+This is my completed project from the Harvard edEx online course.
 
 ## Requirements
 
